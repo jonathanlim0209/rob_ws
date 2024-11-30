@@ -1,0 +1,1 @@
+Invoking command in '/home/jonathan/rob_ws/build/serial': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jonathan/rob_ws/src/serial -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jonathan/rob_ws/install/serial
