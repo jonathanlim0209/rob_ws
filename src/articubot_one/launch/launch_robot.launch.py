@@ -57,6 +57,7 @@ def generate_launch_description():
                     controller_params_file]
     )
 
+    #delay to ensure that controller manager gets the parameters
     delayed_controller_manager = TimerAction(period=3.0, actions=[controller_manager])
 
     diff_drive_spawner = Node(

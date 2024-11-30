@@ -1,0 +1,49 @@
+[0.059s] Invoking command in '/home/jonathan/rob_ws/build/serial': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jonathan/rob_ws/src/serial -DCMAKE_INSTALL_PREFIX=/home/jonathan/rob_ws/install/serial
+[0.181s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.522s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.597s] -- Found ament_cmake_gtest: 1.3.10 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[0.619s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[0.824s] -- Configuring done
+[0.890s] -- Generating done
+[0.901s] -- Build files have been written to: /home/jonathan/rob_ws/build/serial
+[0.923s] Invoked command in '/home/jonathan/rob_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jonathan/rob_ws/src/serial -DCMAKE_INSTALL_PREFIX=/home/jonathan/rob_ws/install/serial
+[0.929s] Invoking command in '/home/jonathan/rob_ws/build/serial': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jonathan/rob_ws/build/serial -- -j2 -l2
+[1.106s] [35m[1mConsolidate compiler generated dependencies of target serial[0m
+[1.113s] [35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[1.155s] [ 14%] Built target gtest
+[1.171s] [ 42%] Built target serial
+[1.211s] [35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[1.226s] [35m[1mConsolidate compiler generated dependencies of target serial_example[0m
+[1.307s] [ 57%] Built target gtest_main
+[1.318s] [ 71%] Built target serial_example
+[1.371s] [35m[1mConsolidate compiler generated dependencies of target serial-test[0m
+[1.387s] [35m[1mConsolidate compiler generated dependencies of target serial-test-timer[0m
+[1.415s] [ 85%] Built target serial-test-timer
+[1.429s] [100%] Built target serial-test
+[1.482s] Invoked command in '/home/jonathan/rob_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jonathan/rob_ws/build/serial -- -j2 -l2
+[1.592s] Invoking command in '/home/jonathan/rob_ws/build/serial': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jonathan/rob_ws/build/serial
+[1.604s] -- Install configuration: ""
+[1.608s] -- Execute custom install script
+[1.608s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/lib/libserial.a
+[1.608s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/include/serial/serial.h
+[1.608s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/include/serial/v8stdint.h
+[1.612s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/serial/environment/library_path.sh
+[1.612s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/serial/environment/library_path.dsv
+[1.612s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/ament_index/resource_index/package_run_dependencies/serial
+[1.612s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/ament_index/resource_index/parent_prefix_path/serial
+[1.612s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/serial/environment/ament_prefix_path.sh
+[1.612s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/serial/environment/ament_prefix_path.dsv
+[1.617s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/serial/environment/path.sh
+[1.617s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/serial/environment/path.dsv
+[1.617s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/serial/local_setup.bash
+[1.617s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/serial/local_setup.sh
+[1.617s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/serial/local_setup.zsh
+[1.617s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/serial/local_setup.dsv
+[1.618s] -- Symlinking: /home/jonathan/rob_ws/install/serial/share/serial/package.dsv
+[1.653s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/ament_index/resource_index/packages/serial
+[1.655s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.656s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake
+[1.656s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/serial/cmake/serialConfig.cmake
+[1.656s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/serial/cmake/serialConfig-version.cmake
+[1.658s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/serial/package.xml
+[1.666s] Invoked command in '/home/jonathan/rob_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jonathan/rob_ws/build/serial

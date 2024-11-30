@@ -20,6 +20,7 @@
 /home/jonathan/rob_ws/install/articubot_one/share/articubot_one/description/lidar.xacro
 /home/jonathan/rob_ws/install/articubot_one/share/articubot_one/description/robot.urdf.xacro
 /home/jonathan/rob_ws/install/articubot_one/share/articubot_one/description/robot_core.xacro
+/home/jonathan/rob_ws/install/articubot_one/share/articubot_one/description/robot_properties.xacro
 /home/jonathan/rob_ws/install/articubot_one/share/articubot_one/description/ros2_control.xacro
 /home/jonathan/rob_ws/install/articubot_one/share/articubot_one/launch/ball_tracker.launch.py
 /home/jonathan/rob_ws/install/articubot_one/share/articubot_one/launch/camera.launch.py
