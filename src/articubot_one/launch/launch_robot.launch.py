@@ -28,12 +28,14 @@ def generate_launch_description():
                 )]), launch_arguments={'use_sim_time': 'false', 'use_ros2_control': 'true'}.items()
     )
 
-    # joystick = IncludeLaunchDescription(
-    #             PythonLaunchDescriptionSource([os.path.join(
-    #                 get_package_share_directory(package_name),'launch','joystick.launch.py'
-    #             )])
-    # )
+    controller_params = os.path.join(get_package_share_directory('articubot_one'), 
+                                     'config', 'my_controller.yaml')
 
+    controller_manager = Node(
+        package ='controller_manager',
+        executable='ros2_control_node',
+        parameters=[{'robot_description': robot_description}, controller_params],
+    )
 
     twist_mux_params = os.path.join(get_package_share_directory(package_name),'config','twist_mux.yaml')
     twist_mux = Node(
