@@ -75,7 +75,7 @@ hardware_interface::CallbackReturn DiffDriveArduino::on_activate(const rclcpp_li
   arduino_.sendEmptyMsg();
   // arduino.setPidValues(9,7,0,100);
   // arduino.setPidValues(14,7,0,100);
-  //arduino_.setPidValues(30, 20, 0, 100);
+  arduino_.setPidValues(30, 20, 0, 100);
 
   return CallbackReturn::SUCCESS;
 }
@@ -147,6 +147,6 @@ hardware_interface::return_type DiffDriveArduino::write(
 #include "pluginlib/class_list_macros.hpp"
 
 PLUGINLIB_EXPORT_CLASS(
-  DiffDriveArduinoHardware,
+  DiffDriveArduino,
   hardware_interface::SystemInterface
 )

@@ -9,6 +9,7 @@
 /home/jonathan/rob_ws/install/articubot_one/share/articubot_one/config/map.rviz
 /home/jonathan/rob_ws/install/articubot_one/share/articubot_one/config/mapper_params_online_async.yaml
 /home/jonathan/rob_ws/install/articubot_one/share/articubot_one/config/my_controllers.yaml
+/home/jonathan/rob_ws/install/articubot_one/share/articubot_one/config/my_controllers_gazebo.yaml
 /home/jonathan/rob_ws/install/articubot_one/share/articubot_one/config/nav2_params.yaml
 /home/jonathan/rob_ws/install/articubot_one/share/articubot_one/config/twist_mux.yaml
 /home/jonathan/rob_ws/install/articubot_one/share/articubot_one/config/view_bot.rviz

@@ -1,0 +1,24 @@
+[2.098s] Invoking command in '/home/jonathan/rob_ws/src/camera_ws': PYTHONPATH=/home/jonathan/rob_ws/build/camera_ws/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jonathan/rob_ws/install/camera_ws/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/camera_ws build --build-base /home/jonathan/rob_ws/build/camera_ws/build install --record /home/jonathan/rob_ws/build/camera_ws/install.log --single-version-externally-managed install_data
+[2.938s] running egg_info
+[2.943s] writing ../../build/camera_ws/camera_ws.egg-info/PKG-INFO
+[2.944s] writing dependency_links to ../../build/camera_ws/camera_ws.egg-info/dependency_links.txt
+[2.944s] writing entry points to ../../build/camera_ws/camera_ws.egg-info/entry_points.txt
+[2.944s] writing requirements to ../../build/camera_ws/camera_ws.egg-info/requires.txt
+[2.944s] writing top-level names to ../../build/camera_ws/camera_ws.egg-info/top_level.txt
+[2.957s] reading manifest file '../../build/camera_ws/camera_ws.egg-info/SOURCES.txt'
+[2.960s] writing manifest file '../../build/camera_ws/camera_ws.egg-info/SOURCES.txt'
+[2.960s] running build
+[2.960s] running build_py
+[2.961s] copying camera_ws/image_subscriber.py -> /home/jonathan/rob_ws/build/camera_ws/build/lib/camera_ws
+[2.964s] running install
+[2.965s] running install_lib
+[2.973s] copying /home/jonathan/rob_ws/build/camera_ws/build/lib/camera_ws/image_subscriber.py -> /home/jonathan/rob_ws/install/camera_ws/lib/python3.10/site-packages/camera_ws
+[2.973s] byte-compiling /home/jonathan/rob_ws/install/camera_ws/lib/python3.10/site-packages/camera_ws/image_subscriber.py to image_subscriber.cpython-310.pyc
+[2.982s] running install_data
+[2.982s] running install_egg_info
+[2.986s] removing '/home/jonathan/rob_ws/install/camera_ws/lib/python3.10/site-packages/camera_ws-0.0.0-py3.10.egg-info' (and everything under it)
+[2.987s] Copying ../../build/camera_ws/camera_ws.egg-info to /home/jonathan/rob_ws/install/camera_ws/lib/python3.10/site-packages/camera_ws-0.0.0-py3.10.egg-info
+[2.989s] running install_scripts
+[3.027s] Installing image_subscriber script to /home/jonathan/rob_ws/install/camera_ws/lib/camera_ws
+[3.029s] writing list of installed files to '/home/jonathan/rob_ws/build/camera_ws/install.log'
+[3.119s] Invoked command in '/home/jonathan/rob_ws/src/camera_ws' returned '0': PYTHONPATH=/home/jonathan/rob_ws/build/camera_ws/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jonathan/rob_ws/install/camera_ws/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/camera_ws build --build-base /home/jonathan/rob_ws/build/camera_ws/build install --record /home/jonathan/rob_ws/build/camera_ws/install.log --single-version-externally-managed install_data

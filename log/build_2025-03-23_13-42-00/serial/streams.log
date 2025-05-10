@@ -1,0 +1,53 @@
+[0.037s] Invoking command in '/home/jonathan/rob_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jonathan/rob_ws/install/camera_ws:/opt/ros/humble /usr/bin/cmake --build /home/jonathan/rob_ws/build/serial -- -j2 -l2
+[0.247s] [  7%] [32mBuilding CXX object CMakeFiles/serial.dir/src/serial.cc.o[0m
+[0.260s] [ 14%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[2.136s] [ 21%] [32mBuilding CXX object CMakeFiles/serial.dir/src/impl/unix.cc.o[0m
+[3.322s] [ 28%] [32mBuilding CXX object CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o[0m
+[4.244s] [ 35%] [32m[1mLinking CXX static library libserial.a[0m
+[4.332s] [ 35%] Built target serial
+[4.373s] [ 42%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[6.271s] [ 50%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[6.324s] [ 50%] Built target gtest_main
+[6.364s] [ 57%] [32mBuilding CXX object CMakeFiles/serial_example.dir/examples/serial_example.cc.o[0m
+[6.869s] [ 64%] [32m[1mLinking CXX executable serial_example[0m
+[7.105s] [ 64%] Built target serial_example
+[7.627s] [ 71%] [32m[1mLinking CXX static library libgtest.a[0m
+[7.715s] [ 71%] Built target gtest
+[7.756s] [ 78%] [32mBuilding CXX object tests/CMakeFiles/serial-test-timer.dir/unit/unix_timer_tests.cc.o[0m
+[7.773s] [ 85%] [32mBuilding CXX object tests/CMakeFiles/serial-test.dir/unix_serial_tests.cc.o[0m
+[9.392s] [ 92%] [32m[1mLinking CXX executable serial-test-timer[0m
+[9.457s] In file included from [01m[K/usr/include/boost/bind.hpp:30[m[K,
+[9.457s]                  from [01m[K/home/jonathan/rob_ws/src/serial/tests/unix_serial_tests.cc:23[m[K:
+[9.457s] [01m[K/usr/include/boost/bind.hpp:36:1:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.[m[K’
+[9.457s]    36 | [01;36m[KBOOST_PRAGMA_MESSAGE[m[K(
+[9.457s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[9.641s] [ 92%] Built target serial-test-timer
+[9.800s] [100%] [32m[1mLinking CXX executable serial-test[0m
+[10.025s] [100%] Built target serial-test
+[10.041s] Invoked command in '/home/jonathan/rob_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jonathan/rob_ws/install/camera_ws:/opt/ros/humble /usr/bin/cmake --build /home/jonathan/rob_ws/build/serial -- -j2 -l2
+[10.101s] Invoking command in '/home/jonathan/rob_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jonathan/rob_ws/install/camera_ws:/opt/ros/humble /usr/bin/cmake --install /home/jonathan/rob_ws/build/serial
+[10.115s] -- Install configuration: ""
+[10.116s] -- Execute custom install script
+[10.117s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/lib/libserial.a
+[10.119s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/include/serial/serial.h
+[10.119s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/include/serial/v8stdint.h
+[10.120s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/serial/environment/library_path.sh
+[10.120s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/serial/environment/library_path.dsv
+[10.122s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/ament_index/resource_index/package_run_dependencies/serial
+[10.124s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/ament_index/resource_index/parent_prefix_path/serial
+[10.125s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/serial/environment/ament_prefix_path.sh
+[10.125s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/serial/environment/ament_prefix_path.dsv
+[10.126s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/serial/environment/path.sh
+[10.126s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/serial/environment/path.dsv
+[10.127s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/serial/local_setup.bash
+[10.127s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/serial/local_setup.sh
+[10.128s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/serial/local_setup.zsh
+[10.129s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/serial/local_setup.dsv
+[10.129s] -- Symlinking: /home/jonathan/rob_ws/install/serial/share/serial/package.dsv
+[10.144s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/ament_index/resource_index/packages/serial
+[10.147s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake
+[10.148s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake
+[10.148s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/serial/cmake/serialConfig.cmake
+[10.150s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/serial/cmake/serialConfig-version.cmake
+[10.152s] -- Up-to-date symlink: /home/jonathan/rob_ws/install/serial/share/serial/package.xml
+[10.162s] Invoked command in '/home/jonathan/rob_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jonathan/rob_ws/install/camera_ws:/opt/ros/humble /usr/bin/cmake --install /home/jonathan/rob_ws/build/serial
