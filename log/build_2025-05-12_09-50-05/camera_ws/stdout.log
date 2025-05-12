@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing camera_ws.egg-info/PKG-INFO
+writing dependency_links to camera_ws.egg-info/dependency_links.txt
+writing entry points to camera_ws.egg-info/entry_points.txt
+writing requirements to camera_ws.egg-info/requires.txt
+writing top-level names to camera_ws.egg-info/top_level.txt
+reading manifest file 'camera_ws.egg-info/SOURCES.txt'
+writing manifest file 'camera_ws.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/jonathan0209/casper_robot/rob_ws/install/camera_ws/lib/python3.10/site-packages/camera-ws.egg-link (link to .)
+Installing image_subscriber script to /home/jonathan0209/casper_robot/rob_ws/install/camera_ws/lib/camera_ws
+
+Installed /home/jonathan0209/casper_robot/rob_ws/build/camera_ws
+running symlink_data
+symbolically linking /home/jonathan0209/casper_robot/rob_ws/build/camera_ws/resource/camera_ws -> /home/jonathan0209/casper_robot/rob_ws/install/camera_ws/share/ament_index/resource_index/packages
+symbolically linking /home/jonathan0209/casper_robot/rob_ws/build/camera_ws/package.xml -> /home/jonathan0209/casper_robot/rob_ws/install/camera_ws/share/camera_ws

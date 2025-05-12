@@ -1,0 +1,18 @@
+[1.312s] Invoking command in '/home/jonathan0209/casper_robot/rob_ws/build/camera_stream': PYTHONPATH=/home/jonathan0209/casper_robot/rob_ws/build/camera_stream/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jonathan0209/casper_robot/rob_ws/install/camera_stream/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jonathan0209/casper_robot/rob_ws/build/camera_stream/build --no-deps symlink_data --force
+[1.655s] running develop
+[1.842s] running egg_info
+[1.842s] writing camera_stream.egg-info/PKG-INFO
+[1.843s] writing dependency_links to camera_stream.egg-info/dependency_links.txt
+[1.843s] writing entry points to camera_stream.egg-info/entry_points.txt
+[1.843s] writing requirements to camera_stream.egg-info/requires.txt
+[1.843s] writing top-level names to camera_stream.egg-info/top_level.txt
+[1.845s] reading manifest file 'camera_stream.egg-info/SOURCES.txt'
+[1.847s] writing manifest file 'camera_stream.egg-info/SOURCES.txt'
+[1.848s] running build_ext
+[1.848s] Creating /home/jonathan0209/casper_robot/rob_ws/install/camera_stream/lib/python3.10/site-packages/camera-stream.egg-link (link to .)
+[1.849s] 
+[1.849s] Installed /home/jonathan0209/casper_robot/rob_ws/build/camera_stream
+[1.849s] running symlink_data
+[1.849s] symbolically linking /home/jonathan0209/casper_robot/rob_ws/build/camera_stream/resource/camera_stream -> /home/jonathan0209/casper_robot/rob_ws/install/camera_stream/share/ament_index/resource_index/packages
+[1.850s] symbolically linking /home/jonathan0209/casper_robot/rob_ws/build/camera_stream/package.xml -> /home/jonathan0209/casper_robot/rob_ws/install/camera_stream/share/camera_stream
+[1.897s] Invoked command in '/home/jonathan0209/casper_robot/rob_ws/build/camera_stream' returned '0': PYTHONPATH=/home/jonathan0209/casper_robot/rob_ws/build/camera_stream/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jonathan0209/casper_robot/rob_ws/install/camera_stream/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jonathan0209/casper_robot/rob_ws/build/camera_stream/build --no-deps symlink_data --force

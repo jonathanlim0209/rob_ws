@@ -1,0 +1,391 @@
+[0.000000] (-) TimerEvent: {}
+[0.000242] (articubot_one) JobQueued: {'identifier': 'articubot_one', 'dependencies': OrderedDict()}
+[0.000275] (camera_stream) JobQueued: {'identifier': 'camera_stream', 'dependencies': OrderedDict()}
+[0.000294] (camera_ws) JobQueued: {'identifier': 'camera_ws', 'dependencies': OrderedDict()}
+[0.000474] (serial) JobQueued: {'identifier': 'serial', 'dependencies': OrderedDict()}
+[0.000511] (diffdrive_arduino) JobQueued: {'identifier': 'diffdrive_arduino', 'dependencies': OrderedDict([('serial', '/home/jonathan0209/casper_robot/rob_ws/install/serial')])}
+[0.000531] (serial) JobStarted: {'identifier': 'serial'}
+[0.015792] (articubot_one) JobStarted: {'identifier': 'articubot_one'}
+[0.018348] (camera_stream) JobStarted: {'identifier': 'camera_stream'}
+[0.023498] (camera_ws) JobStarted: {'identifier': 'camera_ws'}
+[0.029069] (serial) JobProgress: {'identifier': 'serial', 'progress': 'cmake'}
+[0.029615] (serial) JobProgress: {'identifier': 'serial', 'progress': 'build'}
+[0.030521] (serial) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jonathan0209/casper_robot/rob_ws/build/serial', '--', '-j8', '-l8'], 'cwd': '/home/jonathan0209/casper_robot/rob_ws/build/serial', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_SG:en'), ('USER', 'jonathan0209'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jonathan0209'), ('OLDPWD', '/home/jonathan0209/casper_robot/rob_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1620'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/jonathan0209/casper_robot/rob_ws/install'), ('LOGNAME', 'jonathan0209'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jonathan0209'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jonathan0209-VivoBook-S15-X510UF:@/tmp/.ICE-unix/1588,unix/jonathan0209-VivoBook-S15-X510UF:/tmp/.ICE-unix/1588'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1a1254ae_a24b_4359_8b60_9bc789f769a0'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.U9YL62'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.135'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jonathan0209/casper_robot/rob_ws/install/camera_ws:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jonathan0209/casper_robot/rob_ws/build/serial'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jonathan0209/casper_robot/rob_ws/install/camera_ws/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino:/home/jonathan0209/casper_robot/rob_ws/install/serial:/home/jonathan0209/casper_robot/rob_ws/install/articubot_one:/home/jonathan0209/casper_robot/rob_ws/install/camera_ws:/opt/ros/humble')]), 'shell': False}
+[0.032702] (articubot_one) JobProgress: {'identifier': 'articubot_one', 'progress': 'cmake'}
+[0.033115] (articubot_one) Command: {'cmd': ['/usr/bin/cmake', '/home/jonathan0209/casper_robot/rob_ws/src/articubot_one', '-DCMAKE_INSTALL_PREFIX=/home/jonathan0209/casper_robot/rob_ws/install/articubot_one'], 'cwd': '/home/jonathan0209/casper_robot/rob_ws/build/articubot_one', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_SG:en'), ('USER', 'jonathan0209'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jonathan0209'), ('OLDPWD', '/home/jonathan0209/casper_robot/rob_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1620'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/jonathan0209/casper_robot/rob_ws/install'), ('LOGNAME', 'jonathan0209'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jonathan0209'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jonathan0209-VivoBook-S15-X510UF:@/tmp/.ICE-unix/1588,unix/jonathan0209-VivoBook-S15-X510UF:/tmp/.ICE-unix/1588'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1a1254ae_a24b_4359_8b60_9bc789f769a0'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.U9YL62'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.135'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jonathan0209/casper_robot/rob_ws/install/camera_ws:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jonathan0209/casper_robot/rob_ws/build/articubot_one'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jonathan0209/casper_robot/rob_ws/install/camera_ws/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino:/home/jonathan0209/casper_robot/rob_ws/install/serial:/home/jonathan0209/casper_robot/rob_ws/install/articubot_one:/home/jonathan0209/casper_robot/rob_ws/install/camera_ws:/opt/ros/humble')]), 'shell': False}
+[0.100176] (-) TimerEvent: {}
+[0.200563] (-) TimerEvent: {}
+[0.301024] (-) TimerEvent: {}
+[0.405943] (-) TimerEvent: {}
+[0.506624] (-) TimerEvent: {}
+[0.608226] (-) TimerEvent: {}
+[0.651261] (serial) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/serial.dir/src/impl/unix.cc.o\x1b[0m\n'}
+[0.652987] (serial) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o\x1b[0m\n'}
+[0.653602] (serial) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[0.653766] (serial) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/serial.dir/src/serial.cc.o\x1b[0m\n'}
+[0.653930] (serial) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[0.654211] (articubot_one) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.654574] (articubot_one) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.654720] (articubot_one) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.654858] (articubot_one) StdoutLine: {'line': b'-- Generating done\n'}
+[0.655548] (articubot_one) StdoutLine: {'line': b'-- Build files have been written to: /home/jonathan0209/casper_robot/rob_ws/build/articubot_one\n'}
+[0.708318] (-) TimerEvent: {}
+[0.809245] (-) TimerEvent: {}
+[0.911025] (-) TimerEvent: {}
+[1.004044] (articubot_one) CommandEnded: {'returncode': 0}
+[1.006847] (articubot_one) JobProgress: {'identifier': 'articubot_one', 'progress': 'build'}
+[1.006947] (articubot_one) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jonathan0209/casper_robot/rob_ws/build/articubot_one', '--', '-j8', '-l8'], 'cwd': '/home/jonathan0209/casper_robot/rob_ws/build/articubot_one', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_SG:en'), ('USER', 'jonathan0209'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jonathan0209'), ('OLDPWD', '/home/jonathan0209/casper_robot/rob_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1620'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/jonathan0209/casper_robot/rob_ws/install'), ('LOGNAME', 'jonathan0209'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jonathan0209'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jonathan0209-VivoBook-S15-X510UF:@/tmp/.ICE-unix/1588,unix/jonathan0209-VivoBook-S15-X510UF:/tmp/.ICE-unix/1588'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1a1254ae_a24b_4359_8b60_9bc789f769a0'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.U9YL62'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.135'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jonathan0209/casper_robot/rob_ws/install/camera_ws:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jonathan0209/casper_robot/rob_ws/build/articubot_one'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jonathan0209/casper_robot/rob_ws/install/camera_ws/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino:/home/jonathan0209/casper_robot/rob_ws/install/serial:/home/jonathan0209/casper_robot/rob_ws/install/articubot_one:/home/jonathan0209/casper_robot/rob_ws/install/camera_ws:/opt/ros/humble')]), 'shell': False}
+[1.013043] (-) TimerEvent: {}
+[1.071558] (articubot_one) CommandEnded: {'returncode': 0}
+[1.072551] (articubot_one) JobProgress: {'identifier': 'articubot_one', 'progress': 'install'}
+[1.083836] (articubot_one) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jonathan0209/casper_robot/rob_ws/build/articubot_one'], 'cwd': '/home/jonathan0209/casper_robot/rob_ws/build/articubot_one', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_SG:en'), ('USER', 'jonathan0209'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jonathan0209'), ('OLDPWD', '/home/jonathan0209/casper_robot/rob_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1620'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/jonathan0209/casper_robot/rob_ws/install'), ('LOGNAME', 'jonathan0209'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jonathan0209'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jonathan0209-VivoBook-S15-X510UF:@/tmp/.ICE-unix/1588,unix/jonathan0209-VivoBook-S15-X510UF:/tmp/.ICE-unix/1588'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1a1254ae_a24b_4359_8b60_9bc789f769a0'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.U9YL62'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.135'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jonathan0209/casper_robot/rob_ws/install/camera_ws:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jonathan0209/casper_robot/rob_ws/build/articubot_one'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jonathan0209/casper_robot/rob_ws/install/camera_ws/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino:/home/jonathan0209/casper_robot/rob_ws/install/serial:/home/jonathan0209/casper_robot/rob_ws/install/articubot_one:/home/jonathan0209/casper_robot/rob_ws/install/camera_ws:/opt/ros/humble')]), 'shell': False}
+[1.093377] (articubot_one) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.093716] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/config\n'}
+[1.093887] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/config/mapper_params_online_async.yaml\n'}
+[1.094033] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/config/twist_mux.yaml\n'}
+[1.097141] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/config/map.rviz\n'}
+[1.097386] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/config/nav2_params.yaml\n'}
+[1.097590] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/config/drive_bot.rviz\n'}
+[1.097758] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/config/gaz_ros2_ctl_use_sim.yaml\n'}
+[1.097935] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/config/main.rviz\n'}
+[1.098077] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/config/ball_tracker_params_sim.yaml\n'}
+[1.098205] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/config/ball_tracker_params_robot.yaml\n'}
+[1.098369] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/config/view_bot.rviz\n'}
+[1.098493] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/config/my_controllers_gazebo.yaml\n'}
+[1.098663] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/config/my_controllers.yaml\n'}
+[1.098823] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/config/joystick.yaml\n'}
+[1.098996] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/config/gazebo_params.yaml\n'}
+[1.099155] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/config/empty.yaml\n'}
+[1.099277] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/description\n'}
+[1.099458] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/description/inertial_macros.xacro\n'}
+[1.099613] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/description/face.xacro\n'}
+[1.099772] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/description/ros2_control.xacro\n'}
+[1.099953] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/description/lidar.xacro\n'}
+[1.100083] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/description/robot_core.xacro\n'}
+[1.100213] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/description/camera.xacro\n'}
+[1.100338] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/description/robot_properties.xacro\n'}
+[1.100461] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/description/depth_camera.xacro\n'}
+[1.100698] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/description/gazebo_control.xacro\n'}
+[1.100867] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/description/robot.urdf.xacro\n'}
+[1.101047] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/launch\n'}
+[1.101194] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/launch/camera.launch.py\n'}
+[1.101346] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/launch/online_async_launch.py\n'}
+[1.101503] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/launch/localization_launch.py\n'}
+[1.101646] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/launch/rplidar.launch.py\n'}
+[1.101815] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/launch/joystick.launch.py\n'}
+[1.101988] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/launch/launch_sim.launch.py\n'}
+[1.102139] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/launch/rsp.launch.py\n'}
+[1.102297] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/launch/navigation_launch.py\n'}
+[1.102448] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/launch/launch_robot.launch.py\n'}
+[1.102590] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/launch/ball_tracker.launch.py\n'}
+[1.102740] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/worlds\n'}
+[1.102902] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/worlds/empty.world\n'}
+[1.103066] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/worlds/obstacles.world\n'}
+[1.103228] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/ament_index/resource_index/package_run_dependencies/articubot_one\n'}
+[1.103384] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/ament_index/resource_index/parent_prefix_path/articubot_one\n'}
+[1.103705] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/environment/ament_prefix_path.sh\n'}
+[1.103864] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/environment/ament_prefix_path.dsv\n'}
+[1.104020] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/environment/path.sh\n'}
+[1.104150] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/environment/path.dsv\n'}
+[1.104267] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/local_setup.bash\n'}
+[1.104394] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/local_setup.sh\n'}
+[1.104516] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/local_setup.zsh\n'}
+[1.104635] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/local_setup.dsv\n'}
+[1.104764] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/package.dsv\n'}
+[1.104911] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/ament_index/resource_index/packages/articubot_one\n'}
+[1.105050] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig.cmake\n'}
+[1.105174] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig-version.cmake\n'}
+[1.105302] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/package.xml\n'}
+[1.106631] (articubot_one) CommandEnded: {'returncode': 0}
+[1.117581] (-) TimerEvent: {}
+[1.164788] (articubot_one) JobEnded: {'identifier': 'articubot_one', 'rc': 0}
+[1.217681] (-) TimerEvent: {}
+[1.318322] (-) TimerEvent: {}
+[1.362460] (serial) StdoutLine: {'line': b'[ 42%] \x1b[32m\x1b[1mLinking CXX static library libserial.a\x1b[0m\n'}
+[1.418659] (-) TimerEvent: {}
+[1.520110] (-) TimerEvent: {}
+[1.620617] (-) TimerEvent: {}
+[1.721114] (-) TimerEvent: {}
+[1.726139] (camera_stream) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/camera_stream', 'build', '--build-base', '/home/jonathan0209/casper_robot/rob_ws/build/camera_stream/build', 'install', '--record', '/home/jonathan0209/casper_robot/rob_ws/build/camera_stream/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/jonathan0209/casper_robot/rob_ws/src/camera_stream', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_SG:en', 'USER': 'jonathan0209', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/jonathan0209', 'OLDPWD': '/home/jonathan0209/casper_robot/rob_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1620', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/jonathan0209/casper_robot/rob_ws/install', 'LOGNAME': 'jonathan0209', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'jonathan0209', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/jonathan0209-VivoBook-S15-X510UF:@/tmp/.ICE-unix/1588,unix/jonathan0209-VivoBook-S15-X510UF:/tmp/.ICE-unix/1588', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/1a1254ae_a24b_4359_8b60_9bc789f769a0', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.U9YL62', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.135', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/jonathan0209/casper_robot/rob_ws/install/camera_ws:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/jonathan0209/casper_robot/rob_ws/build/camera_stream', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jonathan0209/casper_robot/rob_ws/build/camera_stream/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jonathan0209/casper_robot/rob_ws/install/camera_stream/lib/python3.10/site-packages:/home/jonathan0209/casper_robot/rob_ws/install/camera_ws/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino:/home/jonathan0209/casper_robot/rob_ws/install/serial:/home/jonathan0209/casper_robot/rob_ws/install/articubot_one'}, 'shell': False}
+[1.732191] (camera_ws) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/camera_ws', 'build', '--build-base', '/home/jonathan0209/casper_robot/rob_ws/build/camera_ws/build', 'install', '--record', '/home/jonathan0209/casper_robot/rob_ws/build/camera_ws/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/jonathan0209/casper_robot/rob_ws/src/camera_ws', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_SG:en', 'USER': 'jonathan0209', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/jonathan0209', 'OLDPWD': '/home/jonathan0209/casper_robot/rob_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1620', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/jonathan0209/casper_robot/rob_ws/install', 'LOGNAME': 'jonathan0209', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'jonathan0209', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/jonathan0209-VivoBook-S15-X510UF:@/tmp/.ICE-unix/1588,unix/jonathan0209-VivoBook-S15-X510UF:/tmp/.ICE-unix/1588', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/1a1254ae_a24b_4359_8b60_9bc789f769a0', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.U9YL62', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.135', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/jonathan0209/casper_robot/rob_ws/install/camera_ws:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/jonathan0209/casper_robot/rob_ws/build/camera_ws', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jonathan0209/casper_robot/rob_ws/build/camera_ws/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jonathan0209/casper_robot/rob_ws/install/camera_ws/lib/python3.10/site-packages:/home/jonathan0209/casper_robot/rob_ws/install/camera_ws/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino:/home/jonathan0209/casper_robot/rob_ws/install/serial:/home/jonathan0209/casper_robot/rob_ws/install/articubot_one'}, 'shell': False}
+[1.749434] (serial) StdoutLine: {'line': b'[ 42%] Built target serial\n'}
+[1.772469] (serial) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/serial_example.dir/examples/serial_example.cc.o\x1b[0m\n'}
+[1.821206] (-) TimerEvent: {}
+[1.921531] (-) TimerEvent: {}
+[2.012128] (serial) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[2.018255] (camera_stream) StdoutLine: {'line': b'running egg_info\n'}
+[2.019145] (camera_stream) StdoutLine: {'line': b'creating ../../build/camera_stream/camera_stream.egg-info\n'}
+[2.019491] (camera_stream) StdoutLine: {'line': b'writing ../../build/camera_stream/camera_stream.egg-info/PKG-INFO\n'}
+[2.021488] (camera_stream) StdoutLine: {'line': b'writing dependency_links to ../../build/camera_stream/camera_stream.egg-info/dependency_links.txt\n'}
+[2.021689] (-) TimerEvent: {}
+[2.021865] (camera_stream) StdoutLine: {'line': b'writing entry points to ../../build/camera_stream/camera_stream.egg-info/entry_points.txt\n'}
+[2.026111] (camera_stream) StdoutLine: {'line': b'writing requirements to ../../build/camera_stream/camera_stream.egg-info/requires.txt\n'}
+[2.027441] (camera_stream) StdoutLine: {'line': b'writing top-level names to ../../build/camera_stream/camera_stream.egg-info/top_level.txt\n'}
+[2.028205] (camera_stream) StdoutLine: {'line': b"writing manifest file '../../build/camera_stream/camera_stream.egg-info/SOURCES.txt'\n"}
+[2.035404] (camera_stream) StdoutLine: {'line': b"reading manifest file '../../build/camera_stream/camera_stream.egg-info/SOURCES.txt'\n"}
+[2.038925] (camera_stream) StdoutLine: {'line': b"writing manifest file '../../build/camera_stream/camera_stream.egg-info/SOURCES.txt'\n"}
+[2.039912] (camera_stream) StdoutLine: {'line': b'running build\n'}
+[2.040973] (camera_stream) StdoutLine: {'line': b'running build_py\n'}
+[2.041497] (camera_stream) StdoutLine: {'line': b'creating /home/jonathan0209/casper_robot/rob_ws/build/camera_stream/build\n'}
+[2.041858] (camera_stream) StdoutLine: {'line': b'creating /home/jonathan0209/casper_robot/rob_ws/build/camera_stream/build/lib\n'}
+[2.042334] (camera_stream) StdoutLine: {'line': b'creating /home/jonathan0209/casper_robot/rob_ws/build/camera_stream/build/lib/camera_stream\n'}
+[2.042745] (camera_stream) StdoutLine: {'line': b'copying camera_stream/stream.py -> /home/jonathan0209/casper_robot/rob_ws/build/camera_stream/build/lib/camera_stream\n'}
+[2.043122] (camera_stream) StdoutLine: {'line': b'copying camera_stream/__init__.py -> /home/jonathan0209/casper_robot/rob_ws/build/camera_stream/build/lib/camera_stream\n'}
+[2.043459] (camera_stream) StdoutLine: {'line': b'running install\n'}
+[2.043958] (camera_stream) StdoutLine: {'line': b'running install_lib\n'}
+[2.045751] (camera_stream) StdoutLine: {'line': b'creating /home/jonathan0209/casper_robot/rob_ws/install/camera_stream/lib/python3.10/site-packages/camera_stream\n'}
+[2.046203] (camera_stream) StdoutLine: {'line': b'copying /home/jonathan0209/casper_robot/rob_ws/build/camera_stream/build/lib/camera_stream/stream.py -> /home/jonathan0209/casper_robot/rob_ws/install/camera_stream/lib/python3.10/site-packages/camera_stream\n'}
+[2.046537] (camera_stream) StdoutLine: {'line': b'copying /home/jonathan0209/casper_robot/rob_ws/build/camera_stream/build/lib/camera_stream/__init__.py -> /home/jonathan0209/casper_robot/rob_ws/install/camera_stream/lib/python3.10/site-packages/camera_stream\n'}
+[2.047843] (camera_stream) StdoutLine: {'line': b'byte-compiling /home/jonathan0209/casper_robot/rob_ws/install/camera_stream/lib/python3.10/site-packages/camera_stream/stream.py to stream.cpython-310.pyc\n'}
+[2.048417] (camera_stream) StdoutLine: {'line': b'byte-compiling /home/jonathan0209/casper_robot/rob_ws/install/camera_stream/lib/python3.10/site-packages/camera_stream/__init__.py to __init__.cpython-310.pyc\n'}
+[2.048902] (camera_stream) StdoutLine: {'line': b'running install_data\n'}
+[2.049433] (camera_stream) StdoutLine: {'line': b'creating /home/jonathan0209/casper_robot/rob_ws/install/camera_stream/share/ament_index\n'}
+[2.049736] (camera_stream) StdoutLine: {'line': b'creating /home/jonathan0209/casper_robot/rob_ws/install/camera_stream/share/ament_index/resource_index\n'}
+[2.050135] (camera_stream) StdoutLine: {'line': b'creating /home/jonathan0209/casper_robot/rob_ws/install/camera_stream/share/ament_index/resource_index/packages\n'}
+[2.050434] (camera_stream) StdoutLine: {'line': b'copying resource/camera_stream -> /home/jonathan0209/casper_robot/rob_ws/install/camera_stream/share/ament_index/resource_index/packages\n'}
+[2.051173] (camera_stream) StdoutLine: {'line': b'copying package.xml -> /home/jonathan0209/casper_robot/rob_ws/install/camera_stream/share/camera_stream\n'}
+[2.054028] (camera_stream) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.055816] (camera_stream) StdoutLine: {'line': b'Copying ../../build/camera_stream/camera_stream.egg-info to /home/jonathan0209/casper_robot/rob_ws/install/camera_stream/lib/python3.10/site-packages/camera_stream-0.0.0-py3.10.egg-info\n'}
+[2.058552] (camera_stream) StdoutLine: {'line': b'running install_scripts\n'}
+[2.090773] (camera_stream) StdoutLine: {'line': b"writing list of installed files to '/home/jonathan0209/casper_robot/rob_ws/build/camera_stream/install.log'\n"}
+[2.121814] (-) TimerEvent: {}
+[2.135170] (camera_stream) CommandEnded: {'returncode': 0}
+[2.140202] (serial) StdoutLine: {'line': b'[ 57%] Built target gtest_main\n'}
+[2.140437] (camera_ws) StdoutLine: {'line': b'running egg_info\n'}
+[2.141297] (camera_ws) StdoutLine: {'line': b'creating ../../build/camera_ws/camera_ws.egg-info\n'}
+[2.142102] (camera_ws) StdoutLine: {'line': b'writing ../../build/camera_ws/camera_ws.egg-info/PKG-INFO\n'}
+[2.142348] (camera_ws) StdoutLine: {'line': b'writing dependency_links to ../../build/camera_ws/camera_ws.egg-info/dependency_links.txt\n'}
+[2.142484] (camera_ws) StdoutLine: {'line': b'writing entry points to ../../build/camera_ws/camera_ws.egg-info/entry_points.txt\n'}
+[2.142615] (camera_ws) StdoutLine: {'line': b'writing requirements to ../../build/camera_ws/camera_ws.egg-info/requires.txt\n'}
+[2.142745] (camera_ws) StdoutLine: {'line': b'writing top-level names to ../../build/camera_ws/camera_ws.egg-info/top_level.txt\n'}
+[2.142882] (camera_ws) StdoutLine: {'line': b"writing manifest file '../../build/camera_ws/camera_ws.egg-info/SOURCES.txt'\n"}
+[2.144350] (camera_ws) StdoutLine: {'line': b"reading manifest file '../../build/camera_ws/camera_ws.egg-info/SOURCES.txt'\n"}
+[2.145972] (camera_ws) StdoutLine: {'line': b"writing manifest file '../../build/camera_ws/camera_ws.egg-info/SOURCES.txt'\n"}
+[2.146277] (camera_ws) StdoutLine: {'line': b'running build\n'}
+[2.146428] (camera_ws) StdoutLine: {'line': b'running build_py\n'}
+[2.146555] (camera_ws) StdoutLine: {'line': b'creating /home/jonathan0209/casper_robot/rob_ws/build/camera_ws/build\n'}
+[2.146675] (camera_ws) StdoutLine: {'line': b'creating /home/jonathan0209/casper_robot/rob_ws/build/camera_ws/build/lib\n'}
+[2.148186] (camera_stream) JobEnded: {'identifier': 'camera_stream', 'rc': 0}
+[2.148905] (camera_ws) StdoutLine: {'line': b'creating /home/jonathan0209/casper_robot/rob_ws/build/camera_ws/build/lib/camera_ws\n'}
+[2.149153] (camera_ws) StdoutLine: {'line': b'copying camera_ws/image_subscriber.py -> /home/jonathan0209/casper_robot/rob_ws/build/camera_ws/build/lib/camera_ws\n'}
+[2.149290] (camera_ws) StdoutLine: {'line': b'copying camera_ws/__init__.py -> /home/jonathan0209/casper_robot/rob_ws/build/camera_ws/build/lib/camera_ws\n'}
+[2.149406] (camera_ws) StdoutLine: {'line': b'running install\n'}
+[2.149518] (camera_ws) StdoutLine: {'line': b'running install_lib\n'}
+[2.149699] (camera_ws) StdoutLine: {'line': b'creating /home/jonathan0209/casper_robot/rob_ws/install/camera_ws/lib/python3.10/site-packages/camera_ws\n'}
+[2.149837] (camera_ws) StdoutLine: {'line': b'copying /home/jonathan0209/casper_robot/rob_ws/build/camera_ws/build/lib/camera_ws/image_subscriber.py -> /home/jonathan0209/casper_robot/rob_ws/install/camera_ws/lib/python3.10/site-packages/camera_ws\n'}
+[2.149971] (camera_ws) StdoutLine: {'line': b'copying /home/jonathan0209/casper_robot/rob_ws/build/camera_ws/build/lib/camera_ws/__init__.py -> /home/jonathan0209/casper_robot/rob_ws/install/camera_ws/lib/python3.10/site-packages/camera_ws\n'}
+[2.150044] (camera_ws) StdoutLine: {'line': b'byte-compiling /home/jonathan0209/casper_robot/rob_ws/install/camera_ws/lib/python3.10/site-packages/camera_ws/image_subscriber.py to image_subscriber.cpython-310.pyc\n'}
+[2.150509] (camera_ws) StdoutLine: {'line': b'byte-compiling /home/jonathan0209/casper_robot/rob_ws/install/camera_ws/lib/python3.10/site-packages/camera_ws/__init__.py to __init__.cpython-310.pyc\n'}
+[2.150668] (camera_ws) StdoutLine: {'line': b'running install_data\n'}
+[2.150823] (camera_ws) StdoutLine: {'line': b'creating /home/jonathan0209/casper_robot/rob_ws/install/camera_ws/share/ament_index\n'}
+[2.151118] (camera_ws) StdoutLine: {'line': b'creating /home/jonathan0209/casper_robot/rob_ws/install/camera_ws/share/ament_index/resource_index\n'}
+[2.151240] (camera_ws) StdoutLine: {'line': b'creating /home/jonathan0209/casper_robot/rob_ws/install/camera_ws/share/ament_index/resource_index/packages\n'}
+[2.151368] (camera_ws) StdoutLine: {'line': b'copying resource/camera_ws -> /home/jonathan0209/casper_robot/rob_ws/install/camera_ws/share/ament_index/resource_index/packages\n'}
+[2.151564] (camera_ws) StdoutLine: {'line': b'copying package.xml -> /home/jonathan0209/casper_robot/rob_ws/install/camera_ws/share/camera_ws\n'}
+[2.153079] (camera_ws) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.154506] (camera_ws) StdoutLine: {'line': b'Copying ../../build/camera_ws/camera_ws.egg-info to /home/jonathan0209/casper_robot/rob_ws/install/camera_ws/lib/python3.10/site-packages/camera_ws-0.0.0-py3.10.egg-info\n'}
+[2.155755] (camera_ws) StdoutLine: {'line': b'running install_scripts\n'}
+[2.179347] (camera_ws) StdoutLine: {'line': b'Installing image_subscriber script to /home/jonathan0209/casper_robot/rob_ws/install/camera_ws/lib/camera_ws\n'}
+[2.179891] (camera_ws) StdoutLine: {'line': b"writing list of installed files to '/home/jonathan0209/casper_robot/rob_ws/build/camera_ws/install.log'\n"}
+[2.211677] (camera_ws) CommandEnded: {'returncode': 0}
+[2.218973] (camera_ws) JobEnded: {'identifier': 'camera_ws', 'rc': 0}
+[2.221913] (-) TimerEvent: {}
+[2.251165] (serial) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX executable serial_example\x1b[0m\n'}
+[2.322054] (-) TimerEvent: {}
+[2.348228] (serial) StdoutLine: {'line': b'[ 64%] Built target serial_example\n'}
+[2.422219] (-) TimerEvent: {}
+[2.522510] (-) TimerEvent: {}
+[2.622828] (-) TimerEvent: {}
+[2.723163] (-) TimerEvent: {}
+[2.823493] (-) TimerEvent: {}
+[2.923817] (-) TimerEvent: {}
+[3.024115] (-) TimerEvent: {}
+[3.124695] (-) TimerEvent: {}
+[3.225232] (-) TimerEvent: {}
+[3.326406] (-) TimerEvent: {}
+[3.427587] (-) TimerEvent: {}
+[3.528829] (-) TimerEvent: {}
+[3.630140] (-) TimerEvent: {}
+[3.731308] (-) TimerEvent: {}
+[3.832566] (-) TimerEvent: {}
+[3.933814] (-) TimerEvent: {}
+[4.035003] (-) TimerEvent: {}
+[4.136536] (-) TimerEvent: {}
+[4.237996] (-) TimerEvent: {}
+[4.339188] (-) TimerEvent: {}
+[4.440400] (-) TimerEvent: {}
+[4.541848] (-) TimerEvent: {}
+[4.643175] (-) TimerEvent: {}
+[4.744318] (-) TimerEvent: {}
+[4.845579] (-) TimerEvent: {}
+[4.947074] (-) TimerEvent: {}
+[5.048376] (-) TimerEvent: {}
+[5.149595] (-) TimerEvent: {}
+[5.251051] (-) TimerEvent: {}
+[5.352483] (-) TimerEvent: {}
+[5.454178] (-) TimerEvent: {}
+[5.555279] (-) TimerEvent: {}
+[5.656381] (-) TimerEvent: {}
+[5.757578] (-) TimerEvent: {}
+[5.858792] (-) TimerEvent: {}
+[5.960021] (-) TimerEvent: {}
+[6.061560] (-) TimerEvent: {}
+[6.163134] (-) TimerEvent: {}
+[6.264621] (-) TimerEvent: {}
+[6.365981] (-) TimerEvent: {}
+[6.467314] (-) TimerEvent: {}
+[6.568543] (-) TimerEvent: {}
+[6.670162] (-) TimerEvent: {}
+[6.771287] (-) TimerEvent: {}
+[6.872590] (-) TimerEvent: {}
+[6.973984] (-) TimerEvent: {}
+[7.075458] (-) TimerEvent: {}
+[7.176979] (-) TimerEvent: {}
+[7.278403] (-) TimerEvent: {}
+[7.379668] (-) TimerEvent: {}
+[7.481053] (-) TimerEvent: {}
+[7.582617] (-) TimerEvent: {}
+[7.684096] (-) TimerEvent: {}
+[7.785185] (-) TimerEvent: {}
+[7.886526] (-) TimerEvent: {}
+[7.987848] (-) TimerEvent: {}
+[8.089389] (-) TimerEvent: {}
+[8.191117] (-) TimerEvent: {}
+[8.292525] (-) TimerEvent: {}
+[8.393674] (-) TimerEvent: {}
+[8.495162] (-) TimerEvent: {}
+[8.597185] (-) TimerEvent: {}
+[8.698729] (-) TimerEvent: {}
+[8.800411] (-) TimerEvent: {}
+[8.901720] (-) TimerEvent: {}
+[9.002992] (-) TimerEvent: {}
+[9.104387] (-) TimerEvent: {}
+[9.205700] (-) TimerEvent: {}
+[9.307157] (-) TimerEvent: {}
+[9.408771] (-) TimerEvent: {}
+[9.510830] (-) TimerEvent: {}
+[9.612715] (-) TimerEvent: {}
+[9.714268] (-) TimerEvent: {}
+[9.815954] (-) TimerEvent: {}
+[9.917398] (-) TimerEvent: {}
+[10.018647] (-) TimerEvent: {}
+[10.120511] (-) TimerEvent: {}
+[10.222117] (-) TimerEvent: {}
+[10.323668] (-) TimerEvent: {}
+[10.425247] (-) TimerEvent: {}
+[10.526837] (-) TimerEvent: {}
+[10.628122] (-) TimerEvent: {}
+[10.729849] (-) TimerEvent: {}
+[10.831337] (-) TimerEvent: {}
+[10.933133] (-) TimerEvent: {}
+[11.034358] (-) TimerEvent: {}
+[11.136082] (-) TimerEvent: {}
+[11.238169] (-) TimerEvent: {}
+[11.342305] (-) TimerEvent: {}
+[11.443908] (-) TimerEvent: {}
+[11.544743] (-) TimerEvent: {}
+[11.645051] (-) TimerEvent: {}
+[11.745342] (-) TimerEvent: {}
+[11.845704] (-) TimerEvent: {}
+[11.946043] (-) TimerEvent: {}
+[11.957367] (serial) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[12.046188] (-) TimerEvent: {}
+[12.054276] (serial) StdoutLine: {'line': b'[ 71%] Built target gtest\n'}
+[12.075818] (serial) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object tests/CMakeFiles/serial-test-timer.dir/unit/unix_timer_tests.cc.o\x1b[0m\n'}
+[12.076077] (serial) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object tests/CMakeFiles/serial-test.dir/unix_serial_tests.cc.o\x1b[0m\n'}
+[12.146307] (-) TimerEvent: {}
+[12.246638] (-) TimerEvent: {}
+[12.346974] (-) TimerEvent: {}
+[12.447335] (-) TimerEvent: {}
+[12.547704] (-) TimerEvent: {}
+[12.648033] (-) TimerEvent: {}
+[12.748334] (-) TimerEvent: {}
+[12.848675] (-) TimerEvent: {}
+[12.948993] (-) TimerEvent: {}
+[12.977738] (serial) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/boost/bind.hpp:30\x1b[m\x1b[K,\n'}
+[12.977990] (serial) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jonathan0209/casper_robot/rob_ws/src/serial/tests/unix_serial_tests.cc:23\x1b[m\x1b[K:\n'}
+[12.978086] (serial) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/boost/bind.hpp:36:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.978161] (serial) StderrLine: {'line': b'   36 | \x1b[01;36m\x1b[KBOOST_PRAGMA_MESSAGE\x1b[m\x1b[K(\n'}
+[12.978226] (serial) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.049087] (-) TimerEvent: {}
+[13.063428] (serial) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking CXX executable serial-test-timer\x1b[0m\n'}
+[13.149190] (-) TimerEvent: {}
+[13.209131] (serial) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable serial-test\x1b[0m\n'}
+[13.220007] (serial) StdoutLine: {'line': b'[100%] Built target serial-test-timer\n'}
+[13.249323] (-) TimerEvent: {}
+[13.349730] (-) TimerEvent: {}
+[13.358781] (serial) StdoutLine: {'line': b'[100%] Built target serial-test\n'}
+[13.370562] (serial) CommandEnded: {'returncode': 0}
+[13.371292] (serial) JobProgress: {'identifier': 'serial', 'progress': 'install'}
+[13.372180] (serial) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jonathan0209/casper_robot/rob_ws/build/serial'], 'cwd': '/home/jonathan0209/casper_robot/rob_ws/build/serial', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_SG:en'), ('USER', 'jonathan0209'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jonathan0209'), ('OLDPWD', '/home/jonathan0209/casper_robot/rob_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1620'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/jonathan0209/casper_robot/rob_ws/install'), ('LOGNAME', 'jonathan0209'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jonathan0209'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jonathan0209-VivoBook-S15-X510UF:@/tmp/.ICE-unix/1588,unix/jonathan0209-VivoBook-S15-X510UF:/tmp/.ICE-unix/1588'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1a1254ae_a24b_4359_8b60_9bc789f769a0'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.U9YL62'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.135'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jonathan0209/casper_robot/rob_ws/install/camera_ws:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jonathan0209/casper_robot/rob_ws/build/serial'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jonathan0209/casper_robot/rob_ws/install/camera_ws/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino:/home/jonathan0209/casper_robot/rob_ws/install/serial:/home/jonathan0209/casper_robot/rob_ws/install/articubot_one:/home/jonathan0209/casper_robot/rob_ws/install/camera_ws:/opt/ros/humble')]), 'shell': False}
+[13.380578] (serial) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.380785] (serial) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/serial/lib/libserial.a\n'}
+[13.381494] (serial) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/serial/include/serial/serial.h\n'}
+[13.381663] (serial) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/serial/include/serial/v8stdint.h\n'}
+[13.382012] (serial) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/serial/share/serial/environment/library_path.sh\n'}
+[13.382197] (serial) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/serial/share/serial/environment/library_path.dsv\n'}
+[13.382474] (serial) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/serial/share/ament_index/resource_index/package_run_dependencies/serial\n'}
+[13.382776] (serial) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/serial/share/ament_index/resource_index/parent_prefix_path/serial\n'}
+[13.382958] (serial) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/serial/share/serial/environment/ament_prefix_path.sh\n'}
+[13.383180] (serial) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/serial/share/serial/environment/ament_prefix_path.dsv\n'}
+[13.383374] (serial) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/serial/share/serial/environment/path.sh\n'}
+[13.383522] (serial) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/serial/share/serial/environment/path.dsv\n'}
+[13.383721] (serial) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/serial/share/serial/local_setup.bash\n'}
+[13.383880] (serial) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/serial/share/serial/local_setup.sh\n'}
+[13.384126] (serial) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/serial/share/serial/local_setup.zsh\n'}
+[13.384347] (serial) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/serial/share/serial/local_setup.dsv\n'}
+[13.384548] (serial) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/serial/share/serial/package.dsv\n'}
+[13.384828] (serial) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/serial/share/ament_index/resource_index/packages/serial\n'}
+[13.385320] (serial) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[13.385535] (serial) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[13.385722] (serial) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/serial/share/serial/cmake/serialConfig.cmake\n'}
+[13.385884] (serial) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/serial/share/serial/cmake/serialConfig-version.cmake\n'}
+[13.386020] (serial) StdoutLine: {'line': b'-- Installing: /home/jonathan0209/casper_robot/rob_ws/install/serial/share/serial/package.xml\n'}
+[13.389363] (serial) CommandEnded: {'returncode': 0}
+[13.403370] (serial) JobEnded: {'identifier': 'serial', 'rc': 0}
+[13.404607] (diffdrive_arduino) JobStarted: {'identifier': 'diffdrive_arduino'}
+[13.410646] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'cmake'}
+[13.411773] (diffdrive_arduino) Command: {'cmd': ['/usr/bin/cmake', '/home/jonathan0209/casper_robot/rob_ws/src/diffdrive_arduino', '-DCMAKE_INSTALL_PREFIX=/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino'], 'cwd': '/home/jonathan0209/casper_robot/rob_ws/build/diffdrive_arduino', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_SG:en'), ('USER', 'jonathan0209'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jonathan0209/casper_robot/rob_ws/install/serial/lib:/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jonathan0209'), ('OLDPWD', '/home/jonathan0209/casper_robot/rob_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1620'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/jonathan0209/casper_robot/rob_ws/install'), ('LOGNAME', 'jonathan0209'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jonathan0209'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jonathan0209-VivoBook-S15-X510UF:@/tmp/.ICE-unix/1588,unix/jonathan0209-VivoBook-S15-X510UF:/tmp/.ICE-unix/1588'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1a1254ae_a24b_4359_8b60_9bc789f769a0'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.U9YL62'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.135'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jonathan0209/casper_robot/rob_ws/install/serial:/home/jonathan0209/casper_robot/rob_ws/install/camera_ws:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jonathan0209/casper_robot/rob_ws/build/diffdrive_arduino'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jonathan0209/casper_robot/rob_ws/install/camera_ws/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/jonathan0209/casper_robot/rob_ws/install/serial:/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino:/home/jonathan0209/casper_robot/rob_ws/install/articubot_one:/home/jonathan0209/casper_robot/rob_ws/install/camera_ws:/opt/ros/humble')]), 'shell': False}
+[13.449877] (-) TimerEvent: {}
+[13.467683] (diffdrive_arduino) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[13.525146] (diffdrive_arduino) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[13.532223] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[13.549943] (-) TimerEvent: {}
+[13.599835] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[13.608361] (diffdrive_arduino) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[13.608588] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[13.609202] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[13.612489] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[13.650042] (-) TimerEvent: {}
+[13.693463] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[13.700843] (diffdrive_arduino) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[13.701126] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[13.701642] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[13.703639] (diffdrive_arduino) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[13.750139] (-) TimerEvent: {}
+[13.841822] (diffdrive_arduino) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[13.850225] (-) TimerEvent: {}
+[13.926730] (diffdrive_arduino) StdoutLine: {'line': b'-- Found serial: 1.2.1 (/home/jonathan0209/casper_robot/rob_ws/install/serial/share/serial/cmake)\n'}
+[13.935048] (diffdrive_arduino) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:16 (find_package):\n'}
+[13.935176] (diffdrive_arduino) StderrLine: {'line': b'  By not providing "Findhardware_interface.cmake" in CMAKE_MODULE_PATH this\n'}
+[13.935326] (diffdrive_arduino) StderrLine: {'line': b'  project has asked CMake to find a package configuration file provided by\n'}
+[13.935408] (diffdrive_arduino) StderrLine: {'line': b'  "hardware_interface", but CMake did not find one.\n'}
+[13.935469] (diffdrive_arduino) StderrLine: {'line': b'\n'}
+[13.935525] (diffdrive_arduino) StderrLine: {'line': b'  Could not find a package configuration file provided by\n'}
+[13.935581] (diffdrive_arduino) StderrLine: {'line': b'  "hardware_interface" with any of the following names:\n'}
+[13.935634] (diffdrive_arduino) StderrLine: {'line': b'\n'}
+[13.935688] (diffdrive_arduino) StderrLine: {'line': b'    hardware_interfaceConfig.cmake\n'}
+[13.935741] (diffdrive_arduino) StderrLine: {'line': b'    hardware_interface-config.cmake\n'}
+[13.935794] (diffdrive_arduino) StderrLine: {'line': b'\n'}
+[13.935846] (diffdrive_arduino) StderrLine: {'line': b'  Add the installation prefix of "hardware_interface" to CMAKE_PREFIX_PATH or\n'}
+[13.935910] (diffdrive_arduino) StderrLine: {'line': b'  set "hardware_interface_DIR" to a directory containing one of the above\n'}
+[13.935965] (diffdrive_arduino) StderrLine: {'line': b'  files.  If "hardware_interface" provides a separate development package or\n'}
+[13.936026] (diffdrive_arduino) StderrLine: {'line': b'  SDK, be sure it has been installed.\n'}
+[13.936078] (diffdrive_arduino) StderrLine: {'line': b'\n'}
+[13.936130] (diffdrive_arduino) StderrLine: {'line': b'\x1b[0m\n'}
+[13.936182] (diffdrive_arduino) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[13.936241] (diffdrive_arduino) StdoutLine: {'line': b'See also "/home/jonathan0209/casper_robot/rob_ws/build/diffdrive_arduino/CMakeFiles/CMakeOutput.log".\n'}
+[13.939509] (diffdrive_arduino) CommandEnded: {'returncode': 1}
+[13.951036] (-) TimerEvent: {}
+[13.954359] (diffdrive_arduino) JobEnded: {'identifier': 'diffdrive_arduino', 'rc': 1}
+[13.964700] (-) EventReactorShutdown: {}

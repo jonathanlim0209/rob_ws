@@ -1,8 +1,8 @@
-# Install script for directory: /home/jonathan/rob_ws/src/serial/tests
+# Install script for directory: /home/jonathan0209/casper_robot/rob_ws/src/serial/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/jonathan/rob_ws/install/serial")
+  set(CMAKE_INSTALL_PREFIX "/home/jonathan0209/casper_robot/rob_ws/install/serial")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/jonathan/rob_ws/build/serial/gtest/cmake_install.cmake")
+  include("/home/jonathan0209/casper_robot/rob_ws/build/serial/gtest/cmake_install.cmake")
 
 endif()
 

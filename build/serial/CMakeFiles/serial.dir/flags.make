@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/jonathan/rob_ws/src/serial/include
+CXX_INCLUDES = -I/home/jonathan0209/casper_robot/rob_ws/src/serial/include
 
 CXX_FLAGS = -fPIC
 

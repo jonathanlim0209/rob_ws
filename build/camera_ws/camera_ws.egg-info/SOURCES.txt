@@ -10,7 +10,11 @@ setup.py
 ../../build/camera_ws/camera_ws.egg-info/zip-safe
 camera_ws/__init__.py
 camera_ws/image_subscriber.py
+camera_ws.egg-info/PKG-INFO
+camera_ws.egg-info/SOURCES.txt
+camera_ws.egg-info/dependency_links.txt
+camera_ws.egg-info/entry_points.txt
+camera_ws.egg-info/requires.txt
+camera_ws.egg-info/top_level.txt
+camera_ws.egg-info/zip-safe
 resource/camera_ws
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py

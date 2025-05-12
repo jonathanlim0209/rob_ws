@@ -167,4 +167,12 @@
         <mu2 value="0.001"/>
     </gazebo>
 
+    <gazebo>
+        <disable_collisions>
+            <link1>chassis</link1>
+            <link2>left_wheel</link2>
+            <link3>right_wheel</link3>
+        </disable_collisions>
+    </gazebo>
+
 </robot>

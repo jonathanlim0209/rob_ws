@@ -1,0 +1,346 @@
+[0.103s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.103s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7ac0d3012920>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ac0d30123b0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ac0d30123b0>>, mixin_verb=('build',))
+[0.237s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.237s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.237s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.237s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.237s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.237s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.237s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/jonathan0209/casper_robot/rob_ws'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extensions ['ignore', 'ignore_ament_install']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extension 'ignore'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extension 'ignore_ament_install'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extensions ['colcon_pkg']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extension 'colcon_pkg'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extensions ['colcon_meta']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extension 'colcon_meta'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extensions ['ros']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extension 'ros'
+[0.254s] DEBUG:colcon.colcon_core.package_identification:Package 'src/articubot_one' with type 'ros.ament_cmake' and name 'articubot_one'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_stream) by extensions ['ignore', 'ignore_ament_install']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_stream) by extension 'ignore'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_stream) by extension 'ignore_ament_install'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_stream) by extensions ['colcon_pkg']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_stream) by extension 'colcon_pkg'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_stream) by extensions ['colcon_meta']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_stream) by extension 'colcon_meta'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_stream) by extensions ['ros']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_stream) by extension 'ros'
+[0.255s] DEBUG:colcon.colcon_core.package_identification:Package 'src/camera_stream' with type 'ros.ament_python' and name 'camera_stream'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_ws) by extension 'ignore'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_ws) by extension 'ignore_ament_install'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_ws) by extensions ['colcon_pkg']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_ws) by extension 'colcon_pkg'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_ws) by extensions ['colcon_meta']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_ws) by extension 'colcon_meta'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_ws) by extensions ['ros']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_ws) by extension 'ros'
+[0.257s] DEBUG:colcon.colcon_core.package_identification:Package 'src/camera_ws' with type 'ros.ament_python' and name 'camera_ws'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['ignore', 'ignore_ament_install']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'ignore'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'ignore_ament_install'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['colcon_pkg']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'colcon_pkg'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['colcon_meta']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'colcon_meta'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['ros']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'ros'
+[0.258s] DEBUG:colcon.colcon_core.package_identification:Package 'src/diffdrive_arduino' with type 'ros.ament_cmake' and name 'diffdrive_arduino'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['ignore', 'ignore_ament_install']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ignore'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ignore_ament_install'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['colcon_pkg']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'colcon_pkg'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['colcon_meta']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'colcon_meta'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['ros']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ros'
+[0.260s] DEBUG:colcon.colcon_core.package_identification:Package 'src/serial' with type 'ros.ament_cmake' and name 'serial'
+[0.260s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.260s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.260s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.260s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.260s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.281s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.281s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jonathan0209/casper_robot/rob_ws/install/serial' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.281s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/jonathan0209/casper_robot/rob_ws/install
+[0.282s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 77 installed packages in /opt/ros/humble
+[0.282s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_args' from command line to 'None'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_target' from command line to 'None'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_clean_cache' from command line to 'False'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_clean_first' from command line to 'False'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_force_configure' from command line to 'False'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'ament_cmake_args' from command line to 'None'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'catkin_cmake_args' from command line to 'None'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.293s] DEBUG:colcon.colcon_core.verb:Building package 'articubot_one' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jonathan0209/casper_robot/rob_ws/build/articubot_one', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jonathan0209/casper_robot/rob_ws/install/articubot_one', 'merge_install': False, 'path': '/home/jonathan0209/casper_robot/rob_ws/src/articubot_one', 'symlink_install': False, 'test_result_base': None}
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'camera_stream' build argument 'cmake_args' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'camera_stream' build argument 'cmake_target' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'camera_stream' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'camera_stream' build argument 'cmake_clean_cache' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'camera_stream' build argument 'cmake_clean_first' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'camera_stream' build argument 'cmake_force_configure' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'camera_stream' build argument 'ament_cmake_args' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'camera_stream' build argument 'catkin_cmake_args' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'camera_stream' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.294s] DEBUG:colcon.colcon_core.verb:Building package 'camera_stream' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jonathan0209/casper_robot/rob_ws/build/camera_stream', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jonathan0209/casper_robot/rob_ws/install/camera_stream', 'merge_install': False, 'path': '/home/jonathan0209/casper_robot/rob_ws/src/camera_stream', 'symlink_install': False, 'test_result_base': None}
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'camera_ws' build argument 'cmake_args' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'camera_ws' build argument 'cmake_target' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'camera_ws' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'camera_ws' build argument 'cmake_clean_cache' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'camera_ws' build argument 'cmake_clean_first' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'camera_ws' build argument 'cmake_force_configure' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'camera_ws' build argument 'ament_cmake_args' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'camera_ws' build argument 'catkin_cmake_args' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'camera_ws' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.295s] DEBUG:colcon.colcon_core.verb:Building package 'camera_ws' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jonathan0209/casper_robot/rob_ws/build/camera_ws', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jonathan0209/casper_robot/rob_ws/install/camera_ws', 'merge_install': False, 'path': '/home/jonathan0209/casper_robot/rob_ws/src/camera_ws', 'symlink_install': False, 'test_result_base': None}
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_args' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_cache' from command line to 'False'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_first' from command line to 'False'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_force_configure' from command line to 'False'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'ament_cmake_args' from command line to 'None'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_cmake_args' from command line to 'None'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.296s] DEBUG:colcon.colcon_core.verb:Building package 'serial' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jonathan0209/casper_robot/rob_ws/build/serial', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jonathan0209/casper_robot/rob_ws/install/serial', 'merge_install': False, 'path': '/home/jonathan0209/casper_robot/rob_ws/src/serial', 'symlink_install': False, 'test_result_base': None}
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_args' from command line to 'None'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_target' from command line to 'None'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_clean_cache' from command line to 'False'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_clean_first' from command line to 'False'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_force_configure' from command line to 'False'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'ament_cmake_args' from command line to 'None'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'catkin_cmake_args' from command line to 'None'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.296s] DEBUG:colcon.colcon_core.verb:Building package 'diffdrive_arduino' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jonathan0209/casper_robot/rob_ws/build/diffdrive_arduino', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino', 'merge_install': False, 'path': '/home/jonathan0209/casper_robot/rob_ws/src/diffdrive_arduino', 'symlink_install': False, 'test_result_base': None}
+[0.297s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.298s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.298s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jonathan0209/casper_robot/rob_ws/src/serial' with build type 'ament_cmake'
+[0.298s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jonathan0209/casper_robot/rob_ws/src/serial'
+[0.300s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.300s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.300s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.313s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jonathan0209/casper_robot/rob_ws/src/articubot_one' with build type 'ament_cmake'
+[0.314s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jonathan0209/casper_robot/rob_ws/src/articubot_one'
+[0.314s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.314s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.317s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jonathan0209/casper_robot/rob_ws/src/camera_stream' with build type 'ament_python'
+[0.317s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_stream', 'ament_prefix_path')
+[0.317s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jonathan0209/casper_robot/rob_ws/install/camera_stream/share/camera_stream/hook/ament_prefix_path.ps1'
+[0.318s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jonathan0209/casper_robot/rob_ws/install/camera_stream/share/camera_stream/hook/ament_prefix_path.dsv'
+[0.318s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jonathan0209/casper_robot/rob_ws/install/camera_stream/share/camera_stream/hook/ament_prefix_path.sh'
+[0.319s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.319s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.322s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jonathan0209/casper_robot/rob_ws/src/camera_ws' with build type 'ament_python'
+[0.322s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_ws', 'ament_prefix_path')
+[0.322s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jonathan0209/casper_robot/rob_ws/install/camera_ws/share/camera_ws/hook/ament_prefix_path.ps1'
+[0.323s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jonathan0209/casper_robot/rob_ws/install/camera_ws/share/camera_ws/hook/ament_prefix_path.dsv'
+[0.323s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jonathan0209/casper_robot/rob_ws/install/camera_ws/share/camera_ws/hook/ament_prefix_path.sh'
+[0.324s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.324s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.331s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jonathan0209/casper_robot/rob_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jonathan0209/casper_robot/rob_ws/install/camera_ws:/opt/ros/humble /usr/bin/cmake --build /home/jonathan0209/casper_robot/rob_ws/build/serial -- -j8 -l8
+[0.334s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jonathan0209/casper_robot/rob_ws/build/articubot_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jonathan0209/casper_robot/rob_ws/install/camera_ws:/opt/ros/humble /usr/bin/cmake /home/jonathan0209/casper_robot/rob_ws/src/articubot_one -DCMAKE_INSTALL_PREFIX=/home/jonathan0209/casper_robot/rob_ws/install/articubot_one
+[0.945s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jonathan0209/casper_robot/rob_ws/src/camera_stream'
+[0.945s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.945s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.299s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jonathan0209/casper_robot/rob_ws/src/camera_ws'
+[1.299s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.299s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.305s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jonathan0209/casper_robot/rob_ws/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jonathan0209/casper_robot/rob_ws/install/camera_ws:/opt/ros/humble /usr/bin/cmake /home/jonathan0209/casper_robot/rob_ws/src/articubot_one -DCMAKE_INSTALL_PREFIX=/home/jonathan0209/casper_robot/rob_ws/install/articubot_one
+[1.306s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jonathan0209/casper_robot/rob_ws/build/articubot_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jonathan0209/casper_robot/rob_ws/install/camera_ws:/opt/ros/humble /usr/bin/cmake --build /home/jonathan0209/casper_robot/rob_ws/build/articubot_one -- -j8 -l8
+[1.370s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jonathan0209/casper_robot/rob_ws/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jonathan0209/casper_robot/rob_ws/install/camera_ws:/opt/ros/humble /usr/bin/cmake --build /home/jonathan0209/casper_robot/rob_ws/build/articubot_one -- -j8 -l8
+[1.384s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jonathan0209/casper_robot/rob_ws/build/articubot_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jonathan0209/casper_robot/rob_ws/install/camera_ws:/opt/ros/humble /usr/bin/cmake --install /home/jonathan0209/casper_robot/rob_ws/build/articubot_one
+[1.404s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(articubot_one)
+[1.405s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jonathan0209/casper_robot/rob_ws/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jonathan0209/casper_robot/rob_ws/install/camera_ws:/opt/ros/humble /usr/bin/cmake --install /home/jonathan0209/casper_robot/rob_ws/build/articubot_one
+[1.409s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/articubot_one' for CMake module files
+[1.410s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/articubot_one' for CMake config files
+[1.413s] Level 1:colcon.colcon_core.shell:create_environment_hook('articubot_one', 'cmake_prefix_path')
+[1.414s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.ps1'
+[1.422s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.dsv'
+[1.425s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.sh'
+[1.431s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/articubot_one/bin'
+[1.431s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/articubot_one/lib/pkgconfig/articubot_one.pc'
+[1.432s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/articubot_one/lib/python3.10/site-packages'
+[1.433s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/articubot_one/bin'
+[1.438s] INFO:colcon.colcon_core.shell:Creating package script '/home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/package.ps1'
+[1.442s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/package.dsv'
+[1.443s] INFO:colcon.colcon_core.shell:Creating package script '/home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/package.sh'
+[1.445s] INFO:colcon.colcon_core.shell:Creating package script '/home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/package.bash'
+[1.448s] INFO:colcon.colcon_core.shell:Creating package script '/home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/package.zsh'
+[1.449s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/colcon-core/packages/articubot_one)
+[1.451s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(articubot_one)
+[1.451s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/articubot_one' for CMake module files
+[1.453s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/articubot_one' for CMake config files
+[1.453s] Level 1:colcon.colcon_core.shell:create_environment_hook('articubot_one', 'cmake_prefix_path')
+[1.454s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.ps1'
+[1.455s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.dsv'
+[1.456s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.sh'
+[1.457s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/articubot_one/bin'
+[1.457s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/articubot_one/lib/pkgconfig/articubot_one.pc'
+[1.458s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/articubot_one/lib/python3.10/site-packages'
+[1.458s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/articubot_one/bin'
+[1.459s] INFO:colcon.colcon_core.shell:Creating package script '/home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/package.ps1'
+[1.460s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/package.dsv'
+[1.461s] INFO:colcon.colcon_core.shell:Creating package script '/home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/package.sh'
+[1.461s] INFO:colcon.colcon_core.shell:Creating package script '/home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/package.bash'
+[1.462s] INFO:colcon.colcon_core.shell:Creating package script '/home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/articubot_one/package.zsh'
+[1.463s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jonathan0209/casper_robot/rob_ws/install/articubot_one/share/colcon-core/packages/articubot_one)
+[2.030s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jonathan0209/casper_robot/rob_ws/src/camera_stream': PYTHONPATH=/home/jonathan0209/casper_robot/rob_ws/build/camera_stream/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jonathan0209/casper_robot/rob_ws/install/camera_stream/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera_stream build --build-base /home/jonathan0209/casper_robot/rob_ws/build/camera_stream/build install --record /home/jonathan0209/casper_robot/rob_ws/build/camera_stream/install.log --single-version-externally-managed install_data
+[2.032s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jonathan0209/casper_robot/rob_ws/src/camera_ws': PYTHONPATH=/home/jonathan0209/casper_robot/rob_ws/build/camera_ws/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jonathan0209/casper_robot/rob_ws/install/camera_ws/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera_ws build --build-base /home/jonathan0209/casper_robot/rob_ws/build/camera_ws/build install --record /home/jonathan0209/casper_robot/rob_ws/build/camera_ws/install.log --single-version-externally-managed install_data
+[2.433s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/camera_stream' for CMake module files
+[2.434s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jonathan0209/casper_robot/rob_ws/src/camera_stream' returned '0': PYTHONPATH=/home/jonathan0209/casper_robot/rob_ws/build/camera_stream/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jonathan0209/casper_robot/rob_ws/install/camera_stream/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera_stream build --build-base /home/jonathan0209/casper_robot/rob_ws/build/camera_stream/build install --record /home/jonathan0209/casper_robot/rob_ws/build/camera_stream/install.log --single-version-externally-managed install_data
+[2.434s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/camera_stream' for CMake config files
+[2.435s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/camera_stream/lib'
+[2.435s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/camera_stream/bin'
+[2.435s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/camera_stream/lib/pkgconfig/camera_stream.pc'
+[2.436s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/camera_stream/lib/python3.10/site-packages'
+[2.436s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_stream', 'pythonpath')
+[2.436s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jonathan0209/casper_robot/rob_ws/install/camera_stream/share/camera_stream/hook/pythonpath.ps1'
+[2.437s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jonathan0209/casper_robot/rob_ws/install/camera_stream/share/camera_stream/hook/pythonpath.dsv'
+[2.438s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jonathan0209/casper_robot/rob_ws/install/camera_stream/share/camera_stream/hook/pythonpath.sh'
+[2.439s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/camera_stream/bin'
+[2.439s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(camera_stream)
+[2.440s] INFO:colcon.colcon_core.shell:Creating package script '/home/jonathan0209/casper_robot/rob_ws/install/camera_stream/share/camera_stream/package.ps1'
+[2.442s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jonathan0209/casper_robot/rob_ws/install/camera_stream/share/camera_stream/package.dsv'
+[2.443s] INFO:colcon.colcon_core.shell:Creating package script '/home/jonathan0209/casper_robot/rob_ws/install/camera_stream/share/camera_stream/package.sh'
+[2.444s] INFO:colcon.colcon_core.shell:Creating package script '/home/jonathan0209/casper_robot/rob_ws/install/camera_stream/share/camera_stream/package.bash'
+[2.445s] INFO:colcon.colcon_core.shell:Creating package script '/home/jonathan0209/casper_robot/rob_ws/install/camera_stream/share/camera_stream/package.zsh'
+[2.446s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jonathan0209/casper_robot/rob_ws/install/camera_stream/share/colcon-core/packages/camera_stream)
+[2.510s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/camera_ws' for CMake module files
+[2.511s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jonathan0209/casper_robot/rob_ws/src/camera_ws' returned '0': PYTHONPATH=/home/jonathan0209/casper_robot/rob_ws/build/camera_ws/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jonathan0209/casper_robot/rob_ws/install/camera_ws/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera_ws build --build-base /home/jonathan0209/casper_robot/rob_ws/build/camera_ws/build install --record /home/jonathan0209/casper_robot/rob_ws/build/camera_ws/install.log --single-version-externally-managed install_data
+[2.511s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/camera_ws' for CMake config files
+[2.512s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/camera_ws/lib'
+[2.512s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/camera_ws/bin'
+[2.512s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/camera_ws/lib/pkgconfig/camera_ws.pc'
+[2.512s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/camera_ws/lib/python3.10/site-packages'
+[2.513s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_ws', 'pythonpath')
+[2.513s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jonathan0209/casper_robot/rob_ws/install/camera_ws/share/camera_ws/hook/pythonpath.ps1'
+[2.513s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jonathan0209/casper_robot/rob_ws/install/camera_ws/share/camera_ws/hook/pythonpath.dsv'
+[2.514s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jonathan0209/casper_robot/rob_ws/install/camera_ws/share/camera_ws/hook/pythonpath.sh'
+[2.514s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/camera_ws/bin'
+[2.514s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(camera_ws)
+[2.515s] INFO:colcon.colcon_core.shell:Creating package script '/home/jonathan0209/casper_robot/rob_ws/install/camera_ws/share/camera_ws/package.ps1'
+[2.515s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jonathan0209/casper_robot/rob_ws/install/camera_ws/share/camera_ws/package.dsv'
+[2.516s] INFO:colcon.colcon_core.shell:Creating package script '/home/jonathan0209/casper_robot/rob_ws/install/camera_ws/share/camera_ws/package.sh'
+[2.516s] INFO:colcon.colcon_core.shell:Creating package script '/home/jonathan0209/casper_robot/rob_ws/install/camera_ws/share/camera_ws/package.bash'
+[2.516s] INFO:colcon.colcon_core.shell:Creating package script '/home/jonathan0209/casper_robot/rob_ws/install/camera_ws/share/camera_ws/package.zsh'
+[2.517s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jonathan0209/casper_robot/rob_ws/install/camera_ws/share/colcon-core/packages/camera_ws)
+[13.669s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jonathan0209/casper_robot/rob_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jonathan0209/casper_robot/rob_ws/install/camera_ws:/opt/ros/humble /usr/bin/cmake --build /home/jonathan0209/casper_robot/rob_ws/build/serial -- -j8 -l8
+[13.671s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jonathan0209/casper_robot/rob_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jonathan0209/casper_robot/rob_ws/install/camera_ws:/opt/ros/humble /usr/bin/cmake --install /home/jonathan0209/casper_robot/rob_ws/build/serial
+[13.687s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[13.687s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/serial' for CMake module files
+[13.688s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jonathan0209/casper_robot/rob_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jonathan0209/casper_robot/rob_ws/install/camera_ws:/opt/ros/humble /usr/bin/cmake --install /home/jonathan0209/casper_robot/rob_ws/build/serial
+[13.688s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/serial' for CMake config files
+[13.689s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[13.689s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jonathan0209/casper_robot/rob_ws/install/serial/share/serial/hook/cmake_prefix_path.ps1'
+[13.690s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jonathan0209/casper_robot/rob_ws/install/serial/share/serial/hook/cmake_prefix_path.dsv'
+[13.690s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jonathan0209/casper_robot/rob_ws/install/serial/share/serial/hook/cmake_prefix_path.sh'
+[13.691s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/serial/lib'
+[13.691s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/serial/bin'
+[13.691s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/serial/lib/pkgconfig/serial.pc'
+[13.691s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/serial/lib/python3.10/site-packages'
+[13.692s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/serial/bin'
+[13.692s] INFO:colcon.colcon_core.shell:Creating package script '/home/jonathan0209/casper_robot/rob_ws/install/serial/share/serial/package.ps1'
+[13.693s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jonathan0209/casper_robot/rob_ws/install/serial/share/serial/package.dsv'
+[13.693s] INFO:colcon.colcon_core.shell:Creating package script '/home/jonathan0209/casper_robot/rob_ws/install/serial/share/serial/package.sh'
+[13.694s] INFO:colcon.colcon_core.shell:Creating package script '/home/jonathan0209/casper_robot/rob_ws/install/serial/share/serial/package.bash'
+[13.694s] INFO:colcon.colcon_core.shell:Creating package script '/home/jonathan0209/casper_robot/rob_ws/install/serial/share/serial/package.zsh'
+[13.695s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jonathan0209/casper_robot/rob_ws/install/serial/share/colcon-core/packages/serial)
+[13.695s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[13.696s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/serial' for CMake module files
+[13.696s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/serial' for CMake config files
+[13.696s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[13.697s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jonathan0209/casper_robot/rob_ws/install/serial/share/serial/hook/cmake_prefix_path.ps1'
+[13.697s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jonathan0209/casper_robot/rob_ws/install/serial/share/serial/hook/cmake_prefix_path.dsv'
+[13.697s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jonathan0209/casper_robot/rob_ws/install/serial/share/serial/hook/cmake_prefix_path.sh'
+[13.698s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/serial/lib'
+[13.698s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/serial/bin'
+[13.698s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/serial/lib/pkgconfig/serial.pc'
+[13.699s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/serial/lib/python3.10/site-packages'
+[13.699s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/serial/bin'
+[13.699s] INFO:colcon.colcon_core.shell:Creating package script '/home/jonathan0209/casper_robot/rob_ws/install/serial/share/serial/package.ps1'
+[13.700s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jonathan0209/casper_robot/rob_ws/install/serial/share/serial/package.dsv'
+[13.700s] INFO:colcon.colcon_core.shell:Creating package script '/home/jonathan0209/casper_robot/rob_ws/install/serial/share/serial/package.sh'
+[13.700s] INFO:colcon.colcon_core.shell:Creating package script '/home/jonathan0209/casper_robot/rob_ws/install/serial/share/serial/package.bash'
+[13.701s] INFO:colcon.colcon_core.shell:Creating package script '/home/jonathan0209/casper_robot/rob_ws/install/serial/share/serial/package.zsh'
+[13.701s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jonathan0209/casper_robot/rob_ws/install/serial/share/colcon-core/packages/serial)
+[13.702s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jonathan0209/casper_robot/rob_ws/src/diffdrive_arduino' with build type 'ament_cmake'
+[13.702s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jonathan0209/casper_robot/rob_ws/src/diffdrive_arduino'
+[13.702s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[13.702s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[13.711s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jonathan0209/casper_robot/rob_ws/build/diffdrive_arduino': AMENT_PREFIX_PATH=/home/jonathan0209/casper_robot/rob_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jonathan0209/casper_robot/rob_ws/install/serial:/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino:/home/jonathan0209/casper_robot/rob_ws/install/articubot_one:/home/jonathan0209/casper_robot/rob_ws/install/camera_ws:/opt/ros/humble LD_LIBRARY_PATH=/home/jonathan0209/casper_robot/rob_ws/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/jonathan0209/casper_robot/rob_ws/src/diffdrive_arduino -DCMAKE_INSTALL_PREFIX=/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino
+[14.238s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jonathan0209/casper_robot/rob_ws/build/diffdrive_arduino' returned '1': AMENT_PREFIX_PATH=/home/jonathan0209/casper_robot/rob_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jonathan0209/casper_robot/rob_ws/install/serial:/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino:/home/jonathan0209/casper_robot/rob_ws/install/articubot_one:/home/jonathan0209/casper_robot/rob_ws/install/camera_ws:/opt/ros/humble LD_LIBRARY_PATH=/home/jonathan0209/casper_robot/rob_ws/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/jonathan0209/casper_robot/rob_ws/src/diffdrive_arduino -DCMAKE_INSTALL_PREFIX=/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino
+[14.249s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(diffdrive_arduino)
+[14.249s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino' for CMake module files
+[14.249s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino' for CMake config files
+[14.250s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino/bin'
+[14.250s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino/lib/pkgconfig/diffdrive_arduino.pc'
+[14.250s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino/lib/python3.10/site-packages'
+[14.250s] Level 1:colcon.colcon_core.environment:checking '/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino/bin'
+[14.250s] INFO:colcon.colcon_core.shell:Creating package script '/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.ps1'
+[14.251s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.dsv'
+[14.251s] INFO:colcon.colcon_core.shell:Creating package script '/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.sh'
+[14.252s] INFO:colcon.colcon_core.shell:Creating package script '/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.bash'
+[14.252s] INFO:colcon.colcon_core.shell:Creating package script '/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.zsh'
+[14.252s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino/share/colcon-core/packages/diffdrive_arduino)
+[14.263s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[14.263s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[14.263s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[14.263s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[14.268s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[14.268s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[14.268s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[14.278s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[14.279s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jonathan0209/casper_robot/rob_ws/install/local_setup.ps1'
+[14.281s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jonathan0209/casper_robot/rob_ws/install/_local_setup_util_ps1.py'
+[14.284s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jonathan0209/casper_robot/rob_ws/install/setup.ps1'
+[14.285s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jonathan0209/casper_robot/rob_ws/install/local_setup.sh'
+[14.286s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jonathan0209/casper_robot/rob_ws/install/_local_setup_util_sh.py'
+[14.287s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jonathan0209/casper_robot/rob_ws/install/setup.sh'
+[14.288s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jonathan0209/casper_robot/rob_ws/install/local_setup.bash'
+[14.289s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jonathan0209/casper_robot/rob_ws/install/setup.bash'
+[14.290s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jonathan0209/casper_robot/rob_ws/install/local_setup.zsh'
+[14.291s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jonathan0209/casper_robot/rob_ws/install/setup.zsh'

@@ -1,0 +1,67 @@
+[0.013s] Invoking command in '/home/jonathan0209/casper_robot/rob_ws/build/diffdrive_arduino': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jonathan0209/casper_robot/rob_ws/install/camera_ws:/home/jonathan0209/casper_robot/rob_ws/install/camera_stream:/opt/ros/humble /usr/bin/cmake /home/jonathan0209/casper_robot/rob_ws/src/diffdrive_arduino -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino
+[0.030s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.228s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.242s] -- Found serial: 1.2.1 (/home/jonathan0209/casper_robot/rob_ws/install/serial/share/serial/cmake)
+[0.248s] -- Found hardware_interface: 2.50.0 (/opt/ros/humble/share/hardware_interface/cmake)
+[0.325s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.336s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.349s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.375s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.415s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.707s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.713s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.752s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.813s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.818s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.842s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.848s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.861s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.876s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.891s] -- Looking for pthread.h
+[1.065s] -- Looking for pthread.h - found
+[1.065s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.174s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.175s] -- Found Threads: TRUE  
+[1.262s] -- Found controller_manager: 2.50.0 (/opt/ros/humble/share/controller_manager/cmake)
+[1.433s] -- Configuring done
+[1.541s] -- Generating done
+[1.549s] -- Build files have been written to: /home/jonathan0209/casper_robot/rob_ws/build/diffdrive_arduino
+[1.556s] Invoked command in '/home/jonathan0209/casper_robot/rob_ws/build/diffdrive_arduino' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jonathan0209/casper_robot/rob_ws/install/camera_ws:/home/jonathan0209/casper_robot/rob_ws/install/camera_stream:/opt/ros/humble /usr/bin/cmake /home/jonathan0209/casper_robot/rob_ws/src/diffdrive_arduino -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jonathan0209/casper_robot/rob_ws/install/diffdrive_arduino
+[1.558s] Invoking command in '/home/jonathan0209/casper_robot/rob_ws/build/diffdrive_arduino': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jonathan0209/casper_robot/rob_ws/install/camera_ws:/home/jonathan0209/casper_robot/rob_ws/install/camera_stream:/opt/ros/humble /usr/bin/cmake --build /home/jonathan0209/casper_robot/rob_ws/build/diffdrive_arduino -- -j8 -l8
+[1.616s] [ 42%] [32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/wheel.cpp.o[0m
+[1.617s] [ 42%] [32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/arduino_comms.cpp.o[0m
+[1.617s] [ 42%] [32mBuilding CXX object CMakeFiles/fake_robot.dir/src/fake_robot.cpp.o[0m
+[1.619s] [ 57%] [32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/diffdrive_arduino.cpp.o[0m
+[1.619s] [ 71%] [32mBuilding CXX object CMakeFiles/fake_robot.dir/src/wheel.cpp.o[0m
+[1.661s] [01m[K/home/jonathan0209/casper_robot/rob_ws/src/diffdrive_arduino/src/arduino_comms.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kdiffdrive_arduino/arduino_comms.h: No such file or directory
+[1.661s]     1 | #include [01;31m[K"diffdrive_arduino/arduino_comms.h"[m[K
+[1.661s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.661s] [01m[K/home/jonathan0209/casper_robot/rob_ws/src/diffdrive_arduino/src/wheel.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kdiffdrive_arduino/wheel.h: No such file or directory
+[1.661s]     1 | #include [01;31m[K"diffdrive_arduino/wheel.h"[m[K
+[1.661s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.662s] [01m[K/home/jonathan0209/casper_robot/rob_ws/src/diffdrive_arduino/src/diffdrive_arduino.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kdiffdrive_arduino/diffdrive_arduino.h: No such file or directory
+[1.662s]     1 | #include [01;31m[K"diffdrive_arduino/diffdrive_arduino.h"[m[K
+[1.662s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.662s] [01m[K/home/jonathan0209/casper_robot/rob_ws/src/diffdrive_arduino/src/fake_robot.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kdiffdrive_arduino/fake_robot.h: No such file or directory
+[1.662s]     1 | #include [01;31m[K"diffdrive_arduino/fake_robot.h"[m[K
+[1.662s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.662s] [01m[K/home/jonathan0209/casper_robot/rob_ws/src/diffdrive_arduino/src/wheel.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kdiffdrive_arduino/wheel.h: No such file or directory
+[1.662s]     1 | #include [01;31m[K"diffdrive_arduino/wheel.h"[m[K
+[1.663s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.663s] compilation terminated.
+[1.663s] compilation terminated.
+[1.663s] compilation terminated.
+[1.663s] compilation terminated.
+[1.663s] compilation terminated.
+[1.663s] gmake[2]: *** [CMakeFiles/diffdrive_arduino.dir/build.make:76: CMakeFiles/diffdrive_arduino.dir/src/diffdrive_arduino.cpp.o] Error 1
+[1.663s] gmake[2]: *** Waiting for unfinished jobs....
+[1.664s] gmake[2]: *** [CMakeFiles/diffdrive_arduino.dir/build.make:104: CMakeFiles/diffdrive_arduino.dir/src/arduino_comms.cpp.o] Error 1
+[1.664s] gmake[2]: *** [CMakeFiles/diffdrive_arduino.dir/build.make:90: CMakeFiles/diffdrive_arduino.dir/src/wheel.cpp.o] Error 1
+[1.664s] gmake[2]: *** [CMakeFiles/fake_robot.dir/build.make:90: CMakeFiles/fake_robot.dir/src/wheel.cpp.o] Error 1
+[1.664s] gmake[2]: *** Waiting for unfinished jobs....
+[1.664s] gmake[2]: *** [CMakeFiles/fake_robot.dir/build.make:76: CMakeFiles/fake_robot.dir/src/fake_robot.cpp.o] Error 1
+[1.664s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/diffdrive_arduino.dir/all] Error 2
+[1.664s] gmake[1]: *** Waiting for unfinished jobs....
+[1.664s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/fake_robot.dir/all] Error 2
+[1.664s] gmake: *** [Makefile:146: all] Error 2
+[1.665s] Invoked command in '/home/jonathan0209/casper_robot/rob_ws/build/diffdrive_arduino' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jonathan0209/casper_robot/rob_ws/install/camera_ws:/home/jonathan0209/casper_robot/rob_ws/install/camera_stream:/opt/ros/humble /usr/bin/cmake --build /home/jonathan0209/casper_robot/rob_ws/build/diffdrive_arduino -- -j8 -l8
