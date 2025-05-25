@@ -4,7 +4,7 @@
 
 <!-- Purpose of this piece of code is to put in all the hardware interfaces and on top of all these, to put in the gazebo additional params at bottom-->
 
-    <xacro:arg name="sim_mode" default="true"/>
+    <xacro:arg name="sim_mode" default="false"/>
 
     
     <xacro:unless value="$(arg sim_mode)">
@@ -20,15 +20,15 @@
             </hardware>
             <joint name="left_wheel_joint">
                 <command_interface name="velocity">
-                    <param name="min">-10</param>
-                    <param name="max">10</param>
+                    <param name="min">-255</param>
+                    <param name="max">255</param>
                 </command_interface>
                 <state_interface name="velocity"/>
             </joint>
             <joint name="right_wheel_joint">
                 <command_interface name="velocity">
-                    <param name="min">-10</param>
-                    <param name="max">10</param>
+                    <param name="min">-255</param>
+                    <param name="max">255</param>
                 </command_interface>
                 <state_interface name="velocity"/>
             </joint>

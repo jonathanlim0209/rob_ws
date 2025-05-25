@@ -48,9 +48,7 @@ std::vector<hardware_interface::StateInterface> DiffDriveArduino::export_state_i
   std::vector<hardware_interface::StateInterface> state_interfaces;
 
   state_interfaces.emplace_back(hardware_interface::StateInterface(l_wheel_.name, hardware_interface::HW_IF_VELOCITY, &l_wheel_.vel));
-  state_interfaces.emplace_back(hardware_interface::StateInterface(l_wheel_.name, hardware_interface::HW_IF_POSITION, &l_wheel_.pos));
   state_interfaces.emplace_back(hardware_interface::StateInterface(r_wheel_.name, hardware_interface::HW_IF_VELOCITY, &r_wheel_.vel));
-  state_interfaces.emplace_back(hardware_interface::StateInterface(r_wheel_.name, hardware_interface::HW_IF_POSITION, &r_wheel_.pos));
 
   return state_interfaces;
 }
@@ -75,7 +73,7 @@ hardware_interface::CallbackReturn DiffDriveArduino::on_activate(const rclcpp_li
   arduino_.sendEmptyMsg();
   // arduino.setPidValues(9,7,0,100);
   // arduino.setPidValues(14,7,0,100);
-  arduino_.setPidValues(30, 20, 0, 100);
+  //arduino_.setPidValues(30, 20, 0, 100);
 
   return CallbackReturn::SUCCESS;
 }
@@ -105,17 +103,12 @@ hardware_interface::return_type DiffDriveArduino::read(
     return return_type::ERROR;
   }
 
-  arduino_.readEncoderValues(l_wheel_.enc, r_wheel_.enc);
 
   double pos_prev = l_wheel_.pos;
-  l_wheel_.pos = l_wheel_.calcEncAngle();
   l_wheel_.vel = (l_wheel_.pos - pos_prev) / deltaSeconds;
 
   pos_prev = r_wheel_.pos;
-  r_wheel_.pos = r_wheel_.calcEncAngle();
   r_wheel_.vel = (r_wheel_.pos - pos_prev) / deltaSeconds;
-
-
 
   return return_type::OK;
 
@@ -131,9 +124,10 @@ hardware_interface::return_type DiffDriveArduino::write(
     return return_type::ERROR;
   }
 
-  arduino_.setMotorValues(l_wheel_.cmd / l_wheel_.rads_per_count / cfg_.loop_rate, r_wheel_.cmd / r_wheel_.rads_per_count / cfg_.loop_rate);
+  l_wheel_.vel = l_wheel_.cmd;
+  r_wheel_.vel = r_wheel_.cmd;
 
-
+  arduino_.setMotorValues(l_wheel_.vel, r_wheel_.vel);
 
 
   return return_type::OK;
