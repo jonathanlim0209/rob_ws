@@ -1,1 +1,0 @@
-Invoking command in '/home/jonathan0209/casper_robot/rob_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jonathan0209/casper_robot/rob_ws/install/camera_ws:/opt/ros/humble /usr/bin/cmake /home/jonathan0209/casper_robot/rob_ws/src/serial -DCMAKE_INSTALL_PREFIX=/home/jonathan0209/casper_robot/rob_ws/install/serial
